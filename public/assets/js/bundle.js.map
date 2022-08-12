@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":";;;;;AAAAA,OAAO,CAACC,GAAR,CAAY,OAAZ,E","sources":["webpack://thiago2vp/./src/assets/js/index.js"],"sourcesContent":["console.log('Teste');\n"],"names":["console","log"],"sourceRoot":""}
