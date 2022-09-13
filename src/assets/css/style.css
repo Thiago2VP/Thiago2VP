@@ -112,6 +112,25 @@ main {
     padding: 1rem;
     text-decoration: none;
     color: var(--primary-color);
+    position: relative;
+}
+
+.sites a::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(215, 215, 215, 1) 100%
+    );
+    left: 0;
+    top: 2rem;
+    transition: ease-out 0.4s all;
+}
+
+.sites a:hover::after {
+    content: '______________';
 }
 
 .sites iframe {
@@ -144,12 +163,32 @@ main {
     color: var(--secondary-color);
 }
 
+.suburban a::after {
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(42, 42, 42, 1) 100%
+    );
+}
+
+.suburban a:hover::after {
+    content: '____________';
+}
+
 .git-projects {
     background-color: var(--secondary-color);
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .git-projects .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .git-projects h2 {
@@ -158,6 +197,39 @@ main {
     text-align: center;
     padding: 1rem;
     margin-top: 3rem;
+}
+
+.git-projects .rep-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.rep-cel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 18rem;
+    height: 7.8rem;
+    background-image: url('../images/mold.png');
+    background-size: contain;
+    color: var(--primary-color);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+.rep-cel img {
+    width: 4rem;
+    height: 4rem;
+    padding-right: 0.3rem;
+}
+
+.rep-cel:hover {
+    background-image: url('../images/mold-selec.png');
 }
 
 footer {
@@ -183,6 +255,12 @@ footer a {
     font-size: 1.3rem;
     font-family: 'Permanent Marker', cursive;
     color: var(--secondary-color);
+}
+
+@media screen and (max-width: 975px) {
+    .git-projects .rep-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 912px) {
@@ -217,6 +295,60 @@ footer a {
     }
     .short-pres a {
         animation: btnForClick 5s linear 0.1s infinite;
+    }
+    .sites a {
+        padding: 0;
+        margin: 1rem;
+    }
+    .sites a:hover {
+        background: rgba(255, 255, 255, 0.1)
+            radial-gradient(circle, transparent 1%, rgba(255, 255, 255, 0.1) 1%)
+            center/15000%;
+        transition: linear 0.4s all;
+    }
+    .sites a:active {
+        background-color: rgba(255, 255, 255, 0.1);
+        background-size: 100%;
+        transition: background 0s;
+    }
+    .sites a:hover::after {
+        content: '';
+    }
+    .suburban a:hover {
+        background: rgba(0, 0, 0, 0.1)
+            radial-gradient(circle, transparent 1%, rgba(0, 0, 0, 0.1) 1%)
+            center/15000%;
+        transition: linear 0.4s all;
+    }
+    .suburban a:active {
+        background-color: rgba(0, 0, 0, 0.1);
+        background-size: 100%;
+        transition: background 0s;
+    }
+    .suburban a:hover::after {
+        content: '';
+    }
+    .rep-cel:hover {
+        background: rgba(255, 255, 255, 0.1)
+            radial-gradient(circle, transparent 1%, rgba(255, 255, 255, 0.1) 1%)
+            center/15000%;
+        transition: linear 0.4s all;
+    }
+    .rep-cel:active {
+        background-color: rgba(255, 255, 255, 0.1);
+        background-size: 100%;
+        transition: background 0s;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .git-projects .rep-grid {
+        grid-template-columns: 1fr;
+    }
+    .rep-cel {
+        width: 16.5rem;
+        height: 7.2rem;
+        font-size: 0.9rem;
     }
 }
 
