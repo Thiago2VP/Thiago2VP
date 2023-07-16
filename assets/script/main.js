@@ -178,6 +178,7 @@ typeWriter();
 setTimeout(() => {showElement("#indexSection")}, 2500);
 setTimeout(() => {showElement("#projectsSection")}, 2600);
 setTimeout(() => {showElement("#socialSection")}, 2700);
+setTimeout(() => {showElement("#aboutSection")}, 2800);
 
 document.querySelector("#node").addEventListener("click", setProjectInitial);
 document.querySelector("#hcj").addEventListener("click", setProjectInitial);
