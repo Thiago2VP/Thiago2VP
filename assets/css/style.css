@@ -140,6 +140,24 @@ main h2 {
     font-size: 2.5rem;
     cursor: pointer;
 }
+#socialSection {
+    visibility: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+#socialSection a {
+    text-align: center;
+    color: var(--color);
+    background-color: var(--surface-color);
+    padding: 1.5rem 1rem;
+    animation: projectsOpts 3s linear 0.1s infinite;
+    font-size: 5rem;
+}
+#socialSection span {
+    font-size: 5rem;
+}
 
 @keyframes projectsOpts {
     0%   {background-color: var(--background);}
@@ -168,6 +186,12 @@ main h2 {
         grid-column-start: 1;
         grid-column-end: 3;
     }
+    #socialSection a {
+        font-size: 3rem;
+    }
+    #socialSection span {
+        font-size: 3rem;
+    }
 }
 @media (max-width: 430px) {
     #indexSection {
@@ -192,5 +216,13 @@ main h2 {
     }
     .projectResume p {
         font-size: 1.5rem;
+    }
+}
+@media (max-width: 300px) {
+    #socialSection a {
+        font-size: 2rem;
+    }
+    #socialSection span {
+        font-size: 2rem;
     }
 }

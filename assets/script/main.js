@@ -68,7 +68,7 @@ const pythonProjects = [
     {
         title: "Key Manager",
         description: 'Projeto desktop em python para armazenar informações de conta, como login e senha, em um banco de dados Mariadb. Usa o PyQt5 para a interface. Pode ser conferido no <a href="https://github.com/Thiago2VP/desktop_key_manager" target="_blank">Github</a> e há um <a href="https://pt.linkedin.com/posts/thiago-vasconcelos-pereira_crypto-base64-mariadb-activity-7082856337948221440-2utX" target="_blank">post</a> sobre.',
-        element: '<img style="max-width: 95%;" src="https://media.licdn.com/dms/image/D4D22AQFjfoq-73EaJg/feedshare-shrink_2048_1536/0/1688684541986?e=1692230400&v=beta&t=ybfnOKWQ5bggHvxPFz9_WLLFQcXcgfyt6pNdYMwOM6g" alt="Apresentação do Projeto">'
+        element: '<img style="max-width: 95%;" src="https://media.licdn.com/dms/image/D4D22AQFjfoq-73EaJg/feedshare-shrink_2048_1536/0/1688684541986?e=1692230400&v=beta&t=ybfnOKWQ5bggHvxPFz9_WLLFQcXcgfyt6pNdYMwOM6g" alt="Imagem da Interface do aplicativo Key Manager">'
     },
     {
         title: "Calculadora",
@@ -177,6 +177,7 @@ typeWriter();
 
 setTimeout(() => {showElement("#indexSection")}, 2500);
 setTimeout(() => {showElement("#projectsSection")}, 2600);
+setTimeout(() => {showElement("#socialSection")}, 2700);
 
 document.querySelector("#node").addEventListener("click", setProjectInitial);
 document.querySelector("#hcj").addEventListener("click", setProjectInitial);
