@@ -10,6 +10,7 @@
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">      
     <title>Thiago2VP</title>
 </head>
 <body>
@@ -17,15 +18,49 @@
         <h1 id="mainTittle"></h1>
         <h2 id="mainSubTittle"></h2>
         <section id="indexSection">
-            <a href="#">
+            <a href="#projectsSection">
                 <img src="assets/images/projects.svg" alt="Projetos" >
             </a>
             <a href="#">
                 <img src="assets/images/social.svg" alt="Redes Sociais" >
             </a>
-            <a href="#" id="index3">
+            <a href="#" class="index3">
                 <img src="assets/images/about.svg" alt="Sobre" >
             </a>
+        </section>
+        <section id="projectsSection">
+            <button type="button" id="node" class="projSecBtn">
+                <i class="devicon-react-original-wordmark topProject"></i>
+                <i class="devicon-nodejs-plain-wordmark"></i>
+                <i class="devicon-express-original-wordmark"></i>
+            </button>
+            <button type="button" id="hcj" class="projSecBtn">
+                <i class="devicon-javascript-plain topProject"></i>
+                <i class="devicon-html5-plain-wordmark"></i>
+                <i class="devicon-css3-plain-wordmark"></i>
+            </button>
+            <button type="button" id="python" class="index3 projSecBtn">
+                <i class="devicon-python-plain-wordmark" style="font-size: 6rem;"></i>
+            </button>
+            <article id="specificProject">
+                <div class="projectResume">
+                    <h2 id="projectTitle">Projeto</h2>
+                    <br>
+                    <br>
+                    <p id="projectDescription">Quando selecionada uma das opções acima, aqui haverá uma breve descrição do projeto.</p>
+                    <br>
+                    <br>
+                </div>
+                <div class="projectPresentation">
+                    <div id="projectPresEl">
+                        <img src="assets/images/projetPlain.svg" alt="Apresentação do Projeto" id="projectEl">
+                    </div>
+                    <div class="projectCarBtns">
+                        <button type="button" id="projectBef" style="transform: rotate(180deg);">➤</button>
+                        <button type="button" id="projectAft">➤</button>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
     <script src="assets/script/main.js"></script>

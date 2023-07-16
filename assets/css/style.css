@@ -56,31 +56,141 @@ main h2 {
     margin-top: 2rem;
     background-color: var(--surface-color);
 }
-
 #indexSection img {
     width: 100%;
     margin: auto;
     align-self: center;
     padding: 0.5rem;
 }
+#projectsSection {
+    visibility: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+.projSecBtn {
+    background-color: var(--surface-color);
+    border: none;
+    padding: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+    animation: projectsOpts 3s linear 0.1s infinite;
+}
+#projectsSection button i {
+    font-size: 4rem;
+    color: var(--color);
+}
+#node {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#hcj {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.topProject {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#specificProject {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1rem;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: var(--surface-color);
+    border: 0.4rem solid var(--color);
+    padding: 3rem 1rem;
+}
+.projectResume {
+    text-align: center;
+}
+.projectResume h2 {
+    padding: 1rem;
+    font-size: 3rem;
+}
+.projectResume p {
+    padding: 0.5rem;
+    font-size: 1.7rem;
+    line-height: 1.8rem;
+}
+.projectResume a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+#projectPresEl {
+    display: flex;
+    max-height: 80vh;
+}
+.projectPresentation img {
+    max-height: 80vh;
+    margin: auto;
+}
+.projectCarBtns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.projectCarBtns button {
+    background-color: var(--surface-color);
+    color: var(--color);
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+@keyframes projectsOpts {
+    0%   {background-color: var(--background);}
+    20%  {background-color: var(--surface-color);}
+    80%  {background-color: var(--surface-color);}
+    100%  {background-color: var(--background);}
+}
 
 @media (max-width: 700px) {
     #indexSection {
         grid-template-columns: 1fr 1fr;
     }
-    #index3 {
+    .index3 {
         grid-column-start: 1;
         grid-column-end: 3;
         margin: auto 25vw;
+    }
+    #projectsSection {
+        grid-template-columns: 1fr 1fr;
+    }
+    #python {
+        margin: 0;
+    }
+    #specificProject {
+        grid-template-columns: 1fr;
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 }
 @media (max-width: 430px) {
     #indexSection {
         grid-template-columns: 1fr;
     }
-    #index3 {
+    .index3 {
         grid-column-start: 1;
         grid-column-end: 2;
         margin: auto;
+    }
+    #projectsSection {
+        grid-template-columns: 1fr;
+    }
+    #specificProject {
+        grid-template-columns: 1fr;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding: 0;
+    }
+    .projectResume h2 {
+        font-size: 2rem;
+    }
+    .projectResume p {
+        font-size: 1.5rem;
     }
 }
