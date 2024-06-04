@@ -2,7 +2,7 @@
 - 👀 I’m interested in web applications in the moment
 - 🌱 I’m currently learning JavaScript
 - 💞️ I’m looking to collaborate on web project using JavaScript
-- 📫 How to reach, send email to thiagovasconcelosvp@gmail.com
+- 📫 How to reach, send email to thiagovasconcelosvp@protonmail.com
 
 <!---
 Thiago2VP/Thiago2VP is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
