@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @Thiago2VP
 - 👀 I’m interested in web applications in the moment
-- 🌱 I’m currently learning JavaScript
-- 💞️ I’m looking to collaborate on web project using JavaScript
+- 🌱 I’m currently learning React and Redux
+- 💞️ I’m looking to collaborate on web project using NodeJS
 - 📫 How to reach, send email to thiagovasconcelosvp@protonmail.com
 
 <!---
